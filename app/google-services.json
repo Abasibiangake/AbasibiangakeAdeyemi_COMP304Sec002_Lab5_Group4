@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174355846475",
+    "project_id": "abasibiangakeadeyemi-group4",
+    "storage_bucket": "abasibiangakeadeyemi-group4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174355846475:android:b3929342a60d9586c684ce",
+        "android_client_info": {
+          "package_name": "com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174355846475-pr6uqnakl3vencl9rrra05nmc7n6o7i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZPQ8NN3pOqaAzN8hv7UMcDUMlSZ-vihA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174355846475-pr6uqnakl3vencl9rrra05nmc7n6o7i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
