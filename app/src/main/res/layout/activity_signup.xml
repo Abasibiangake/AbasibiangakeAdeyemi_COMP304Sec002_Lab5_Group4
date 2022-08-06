@@ -9,7 +9,8 @@
     android:background="@color/black_shade_1"
     android:gravity="center"
     android:padding="12dp"
-    tools:context=".SignupActivity">
+    >
+<!--    tools:context=".SignupActivity"-->
 
 
     <TextView
