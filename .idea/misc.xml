@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/progress_back.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/add_button.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_laptop.xml" value="0.2958963282937365" />
+        <entry key="app/src/main/res/layout/activity_edit_laptop.xml" value="0.22826086956521738" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.10588235294117647" />
+        <entry key="app/src/main/res/layout/display_laptop_list.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/laptop_details_layout.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idDetailSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_shade_1"
+    android:padding="4dp">
+
+    <!--text view for displaying laptop name-->
+    <TextView
+        android:id="@+id/idLaptopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:text="Laptop Name: "
+        android:textColor="@color/peek_white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!--image view for displaying laptop image-->
+    <ImageView
+        android:id="@+id/idLaptopImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/idLaptopName"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!--text view for displaying laptop Brand-->
+    <TextView
+        android:id="@+id/idLaptopBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLaptopName"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@id/idLaptopImage"
+        android:layout_toRightOf="@id/idLaptopImage"
+        android:padding="3dp"
+        android:text="Brand: "
+        android:textColor="@color/white" />
+
+    <!--text view for displaying laptop RAM -->
+    <TextView
+        android:id="@+id/idLaptopRAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLaptopBrand"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idLaptopImage"
+        android:padding="3dp"
+        android:text="RAM: "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/idLaptopProcessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLaptopRAM"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idLaptopImage"
+        android:padding="3dp"
+        android:text="Processor: "
+        android:textColor="@color/white" />
+
+    <!--text view for displaying laptop cost-->
+    <TextView
+        android:id="@+id/idLaptopCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLaptopProcessor"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idLaptopImage"
+        android:padding="3dp"
+        android:text="Cost: "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLaptopCost"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--button for editing laptop detail-->
+        <Button
+            android:id="@+id/idBtnEditDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="Edit Laptop Detail"
+            android:textAllCaps="false" />
+
+        <!--button for viewing laptop details-->
+        <Button
+            android:id="@+id/idBtnVIewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:text="View Details"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
