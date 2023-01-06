@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -85,6 +85,6 @@ public class LaptopAdapter extends RecyclerView.Adapter<LaptopAdapter.ViewHolder
 
     // creating a interface for on click
     public interface ClickLaptopInterface {
-         void onLaptopClick(int position);
+        void onLaptopClick(int position);
     }
 }

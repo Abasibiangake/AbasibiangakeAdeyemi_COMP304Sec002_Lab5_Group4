@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,7 +54,7 @@ public class EditLaptopActivity extends AppCompatActivity {
 
 
         //get the passes data from the MainactivityIntent
-       laptopList = getIntent().getParcelableExtra("detail");
+        laptopList = getIntent().getParcelableExtra("detail");
 
         if (laptopList != null){
             //get all the laptop detail of the selected

@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import android.os.Parcel;
 import android.os.Parcelable;

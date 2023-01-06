@@ -6,19 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black_shade_1"
-    android:gravity="center"
+  android:gravity="center"
     android:padding="12dp"
-    >
-<!--    tools:context=".SigninActivity"-->
+    tools:context=".SigninActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginBottom="35dp"
-        android:textSize="28sp"
-        android:textStyle="bold"
         android:text="Sign In"
         />
 
@@ -26,15 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
-        android:textColor="@color/white"
         android:layout_gravity="start"
         />
     <EditText
         android:id="@+id/email_signin"
         android:layout_width="match_parent"
-        android:textColor="@color/white"
-        android:inputType="textEmailAddress"
-        android:backgroundTint="@color/peek_white"
         android:layout_height="wrap_content"
         />
 
@@ -42,15 +32,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:textColor="@color/white"
         android:layout_gravity="start"
         />
     <EditText
         android:id="@+id/password_signin"
         android:layout_width="match_parent"
-        android:textColor="@color/white"
-        android:inputType="textPassword"
-        android:backgroundTint="@color/peek_white"
         android:layout_height="wrap_content"
         />
 
@@ -58,15 +44,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign In"
-        android:layout_marginTop="15dp"
         android:onClick="signin"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_margin="15dp"
-        android:textSize="18sp"
         android:text="Sign up instead"
         android:onClick="goToSignup"
         />

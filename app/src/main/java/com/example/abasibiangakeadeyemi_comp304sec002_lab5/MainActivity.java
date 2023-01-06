@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +12,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar loadingSign;
     private RelativeLayout homeLayout;
     private LaptopAdapter laptopAdapter;
+    UserViewModel userViewModel;
 
     public static String TAG = "MAIN ACTIVITY";
 
@@ -57,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase =FirebaseDatabase.getInstance();
         homeLayout= findViewById(R.id.idDetailSheet);
         loadingSign =findViewById(R.id.idLoadingSign);
+        userViewModel= ViewModelProviders.of(this).get(UserViewModel.class);
+
 //        mAuth = FirebaseAuth.getInstance();
 
         laptopArrayList =new ArrayList<>();
@@ -81,6 +87,22 @@ public class MainActivity extends AppCompatActivity {
         getLaptopList();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.logout,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout_icon:
+                userViewModel.logout();
+                Intent i=new Intent(MainActivity.this,SigninActivity.class);
+                startActivity(i);
+        }
+        return true;
+    }
     private void getLaptopList(){
         //clear the laptop list
         laptopArrayList.clear();
@@ -267,10 +289,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //myRef.setValue("Hello, World!");
+//myRef.setValue("Hello, World!");
 
-        //HashMap<String, Object> laptopList = (HashMap<String, Object>) dataSnapshot.getValue();
-        // Read from the database
+//HashMap<String, Object> laptopList = (HashMap<String, Object>) dataSnapshot.getValue();
+// Read from the database
 //        myRef.addValueEventListener(new ValueEventListener() {
 //
 //            @Override

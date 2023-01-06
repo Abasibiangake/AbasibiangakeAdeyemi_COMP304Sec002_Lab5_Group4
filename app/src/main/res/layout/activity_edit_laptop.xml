@@ -131,7 +131,7 @@
                     android:layout_margin="10dp"
                     android:paddingHorizontal="30dp"
                     android:text="Update Laptop" />
-<!--                    android:onClick="loadHomePage"-->
+                <!--                    android:onClick="loadHomePage"-->
 
 
                 <Button
@@ -141,7 +141,7 @@
                     android:layout_margin="10dp"
                     android:paddingHorizontal="30dp"
                     android:text="Delete Laptop" />
-<!--                    android:onClick="loadHomePage"-->
+                <!--                    android:onClick="loadHomePage"-->
 
             </LinearLayout>
 

@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import android.content.Context;
 import java.util.HashMap;
@@ -22,22 +22,24 @@ public class LaptopRepository {
         laptopUpdateList = laptopDao.updateDB();
     }
 
-    public void insert(String  key, Laptop laptop){
+    public void insert(String key, Laptop laptop) {
         laptopDao.insert(key, laptop);
     }
-    public void update(String  key, Map<String, Object> laptopHashMap){
+
+    public void update(String key, Map<String, Object> laptopHashMap) {
         laptopDao.update(key, laptopHashMap);
     }
 
-    public Query updateDB(){
+    public Query updateDB() {
         return laptopUpdateList;
     }
-    public void remove(String key){
+
+    public void remove(String key) {
         laptopDao.remove(key);
     }
 
-    public Query getLaptop(){
+    public Query getLaptop() {
         return laptopList;
     }
-
 }
+

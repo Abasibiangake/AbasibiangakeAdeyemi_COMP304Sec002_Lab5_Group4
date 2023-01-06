@@ -1,4 +1,4 @@
-package com.example.abasibiangakeadeyemi_comp304sec002_lab5_group4;
+package com.example.abasibiangakeadeyemi_comp304sec002_lab5;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
@@ -19,6 +19,7 @@ public class AddLaptopActivity extends AppCompatActivity {
     String newlaptopName, newlaptopRAM, newlaptopProcessor,
             newlaptopCost, newlaptopImageURL, newlaptopBrand;
     String laptopKey;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +27,11 @@ public class AddLaptopActivity extends AppCompatActivity {
 
         //declare and initialise view by id
         laptopName = findViewById(R.id.idEditLaptopName);
-        laptopRAM =findViewById(R.id.idEditLaptopRAM);
-        laptopProcessor =findViewById(R.id.idEditLaptopProcessor);
-        laptopCost =findViewById(R.id.idEditLaptopCost);
-        laptopImageURL =findViewById(R.id.idEditLaptopImage);
-        laptopBrand =findViewById(R.id.idEditLaptopBrand);
+        laptopRAM = findViewById(R.id.idEditLaptopRAM);
+        laptopProcessor = findViewById(R.id.idEditLaptopProcessor);
+        laptopCost = findViewById(R.id.idEditLaptopCost);
+        laptopImageURL = findViewById(R.id.idEditLaptopImage);
+        laptopBrand = findViewById(R.id.idEditLaptopBrand);
         addLaptopButton = findViewById(R.id.idAddLaptopButton);
 
         //when button is pressed call, listener calls this method
@@ -46,7 +47,7 @@ public class AddLaptopActivity extends AppCompatActivity {
                 //replace autogeneration of unique keys
                 laptopKey = newlaptopName;  //laptopName.getText().toString();
                 laptopViewModel = ViewModelProviders.of(AddLaptopActivity.this).get(LaptopViewModel.class);
-                Laptop laptop = new Laptop ( newlaptopBrand,
+                Laptop laptop = new Laptop(newlaptopBrand,
                         newlaptopRAM,
                         newlaptopProcessor,
                         newlaptopCost,
